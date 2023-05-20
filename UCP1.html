@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=devide-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
    
     <head>
         <header>
@@ -22,10 +26,9 @@
                 </div>
               </nav>
         </header>
-
       <body>
-        
-        <h1 class="text-center mt-3">Praktikum Bootstrap</h1>
+        <p id="greeting" style="font-size: 20px; font-weight: bold;"></p> 
+        <p id="currentDateTime" class="text-right"></p>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -34,13 +37,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="GI.jpeg" alt="First slide">
+                <img class="d-block w-100" src="Genshin-Impact-001.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="GI2.jpeg" alt="Second slide">
+                <img class="d-block w-100" src="Genshin-Impact-002.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="GI3.jpeg" alt="Third slide">
+                <img class="d-block w-100" src="Genshin-Impact-003.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -52,61 +55,76 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-
-        <div class="container py-4">
-          <div class="p-5 mb-4 bg-lightrounded-3">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Selamat Datang di Web Ghenshin</h1>
-              <p class="col-md-8 fs-4">
-                Gim online besutan mihoYo ini sudah resmi diirilis pada 28 September 2020. Sejak beberapa waktu terakhir, Genshin Impact sudah ditunggu oleh para penggemar gim MMORPG. Terbukti setelah dirilis selama empat hari, gim ini telah diunduh oleh lebih dari 17 juta kali.
-                Genshin Impact ini tersedia bukan hanya di Android saja, tetapi juga bisa dimainkan melalui platform iOS, Windows dan juga PS4. Pada dasarnya, gim ini dapat dimainkan secara gratis.
-                Akan tetapi, kamu juga membeli starter pack Genshin Impact sekitar Rp. 150.000 bagi pengguna PS4. Berbagai item dan bonus akan didapatkan untuk menunjang permainan. Jika ingin bermain gim ini, gunakan smartphone dengan ruang penyimpanan yang besar.
-              </p>
-              <button class="btn btn-primary btn-lg">Klik Disini Untuk Melihat Lengkap</button>
-      
+          <div style="padding: 100px"></div>
+        <div class="card-deck-wrapper">
+         <div class="card-deck" style="justify-content: center">
+            <div class="card" style="max-width: 319px;">
+              <img class="card-img-top" src="Genshin-Impact-Artefak.png" alt="Card image cap" width="297" height="180">
+              <div class="card-body">
+                <h5 class="card-title">Artefak</h5>
+                <p class="card-text">Dalam permainan genshin membutuhkan artefak untuk meningkatkan kualitas suatu character.</p>
+              </div>
+            </div>
+            <div class="card" style="max-width: 319px;">
+              <img class="card-img-top" src="Genshin-Impact-Vision.webp" alt="Card image cap" width="297" height="180">
+              <div class="card-body">
+                <h5 class="card-title">Vision</h5>
+                <p class="card-text">Dalam permainan genshin setiap character memiliki vision sendiri untuk berbagai macam musuh.</p>
+              </div>
+            </div>
+            <div class="card" style="max-width: 319px;">
+              <img class="card-img-top" src="Genshin-Impact-Weapon.jpg" alt="Card image cap" width="297" height="180">
+              <div class="card-body">
+                <h5 class="card-title">Weapon</h5>
+                <p class="card-text">Dalam permainan genshin weapon berperan penting dalam meningkatkan kualitas suatu character.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="GI.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">p</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="GI2.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">p</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="GI3.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">p</p>
-                
-              </div>
-            </div>
-          </div>
+        <div style="padding: 100px"></div>
         <footer class="bg-dark text-light">
           <div class="container">
             <div class="row">
               <div class="col-6">
                 </div>
               </div>
-              
               <div class="col-12">
                 <div class="text-center py-3">
-                  <p>&copy; 2023 PENGEMBANGAN DESAIN WEB : Wiranto Akbar Fadlillah</p>
+                  <p>&copy; 2023 Pengembangan Desain Web, Created By Wiranto Akbar Fadlillah</p>
                 </div>
               </div>
             </div>
           </div>
         </footer>
+        <script>
+          var greetingElement = document.getElementById('greeting');
+          var dateElement = document.getElementById('currentDateTime');
+          var currentDate = new Date();
+      
+          var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+          var currentDateTime = currentDate.toLocaleDateString(undefined, options);
+      
+          dateElement.innerHTML = currentDateTime;
+          greetingElement.innerHTML = getGreeting(currentDate.getHours());
+      
+          function getGreeting(hour) {
+              var greeting;
+      
+              if (hour >= 0 && hour < 12) {
+                  greeting = 'Selamat pagi, Traveler';
+              } else if (hour >= 12 && hour < 18) {
+                  greeting = 'Selamat siang, Traveler';
+              } else {
+                  greeting = 'Selamat malam, Traveler';
+              }
+              return greeting;
+          }
+      </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       </body>
     </head>
   </head>
